@@ -4,7 +4,7 @@ namespace DemoApp;
 
 public class Database
 {
-    private SqlConnection con = new SqlConnection("Data Source=DESKTOP-2BAMTAJ;Database=AidanaTest;Trusted_Connection=True;User ID=sa;Password=123;TrustServerCertificate=True;");
+    private SqlConnection con = new SqlConnection("Data Source=NARUTO\\SQLEXPRESS;Database=libraries;Trusted_Connection=True;TrustServerCertificate=True;");
 
 
     public void openCon()

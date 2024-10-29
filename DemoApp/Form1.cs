@@ -12,14 +12,14 @@ namespace DemoApp
             InitializeComponent();
         }
 
-        private void ExecuteQuery()
+        private void button1_Click_1(object sender, EventArgs e)
         {
             try
             {
                 db.openCon();
 
                 // Создаем SQL-запрос
-                SqlCommand cmd = new SqlCommand("SELECT * FROM TestTable", db.getCon());
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Biblioteka", db.getCon());
 
                 // Используем SqlDataAdapter для выполнения запроса и заполнения DataTable
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -39,9 +39,112 @@ namespace DemoApp
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            ExecuteQuery();
+            try
+            {
+                db.openCon();
+
+                // Создаем SQL-запрос
+                SqlCommand cmd = new SqlCommand("SELECT * FROM FondBiblioteki", db.getCon());
+
+                // Используем SqlDataAdapter для выполнения запроса и заполнения DataTable
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                // Заполняем DataGridView данными из DataTable
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                db.closeCon();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                db.openCon();
+
+                // Создаем SQL-запрос
+                SqlCommand cmd = new SqlCommand("SELECT * FROM TipLiteratury", db.getCon());
+
+                // Используем SqlDataAdapter для выполнения запроса и заполнения DataTable
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                // Заполняем DataGridView данными из DataTable
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                db.closeCon();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                db.openCon();
+
+                // Создаем SQL-запрос
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Sotrudniki", db.getCon());
+
+                // Используем SqlDataAdapter для выполнения запроса и заполнения DataTable
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                // Заполняем DataGridView данными из DataTable
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                db.closeCon();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                db.openCon();
+
+                // Создаем SQL-запрос
+                SqlCommand cmd = new SqlCommand("SELECT * FROM PopolnenieFonda", db.getCon());
+
+                // Используем SqlDataAdapter для выполнения запроса и заполнения DataTable
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+
+                // Заполняем DataGridView данными из DataTable
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                db.closeCon();
+            }
         }
     }
 }
