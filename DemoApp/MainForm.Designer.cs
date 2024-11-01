@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             bibliotekiButton = new Button();
             fondBibliotekButton = new Button();
             tipLiteraturyButton = new Button();
             sotrudnikiButton = new Button();
             popolnenieFondaButton = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // bibliotekiButton
             // 
             bibliotekiButton.Font = new Font("Segoe UI", 20.25F);
-            bibliotekiButton.Location = new Point(12, 12);
+            bibliotekiButton.Location = new Point(12, 259);
             bibliotekiButton.Name = "bibliotekiButton";
-            bibliotekiButton.Size = new Size(296, 58);
+            bibliotekiButton.Size = new Size(304, 58);
             bibliotekiButton.TabIndex = 0;
             bibliotekiButton.Text = "Библиотеки";
             bibliotekiButton.UseVisualStyleBackColor = true;
@@ -49,9 +52,9 @@
             // fondBibliotekButton
             // 
             fondBibliotekButton.Font = new Font("Segoe UI", 20.25F);
-            fondBibliotekButton.Location = new Point(12, 76);
+            fondBibliotekButton.Location = new Point(12, 323);
             fondBibliotekButton.Name = "fondBibliotekButton";
-            fondBibliotekButton.Size = new Size(296, 58);
+            fondBibliotekButton.Size = new Size(304, 58);
             fondBibliotekButton.TabIndex = 2;
             fondBibliotekButton.Text = "Фонд библиотек";
             fondBibliotekButton.UseVisualStyleBackColor = true;
@@ -60,9 +63,9 @@
             // tipLiteraturyButton
             // 
             tipLiteraturyButton.Font = new Font("Segoe UI", 20.25F);
-            tipLiteraturyButton.Location = new Point(12, 207);
+            tipLiteraturyButton.Location = new Point(12, 451);
             tipLiteraturyButton.Name = "tipLiteraturyButton";
-            tipLiteraturyButton.Size = new Size(296, 58);
+            tipLiteraturyButton.Size = new Size(304, 58);
             tipLiteraturyButton.TabIndex = 3;
             tipLiteraturyButton.Text = "Тип литературы";
             tipLiteraturyButton.UseVisualStyleBackColor = true;
@@ -71,9 +74,9 @@
             // sotrudnikiButton
             // 
             sotrudnikiButton.Font = new Font("Segoe UI", 20.25F);
-            sotrudnikiButton.Location = new Point(12, 143);
+            sotrudnikiButton.Location = new Point(12, 387);
             sotrudnikiButton.Name = "sotrudnikiButton";
-            sotrudnikiButton.Size = new Size(296, 58);
+            sotrudnikiButton.Size = new Size(304, 58);
             sotrudnikiButton.TabIndex = 4;
             sotrudnikiButton.Text = "Сотрудники";
             sotrudnikiButton.UseVisualStyleBackColor = true;
@@ -82,19 +85,30 @@
             // popolnenieFondaButton
             // 
             popolnenieFondaButton.Font = new Font("Segoe UI", 20.25F);
-            popolnenieFondaButton.Location = new Point(12, 271);
+            popolnenieFondaButton.Location = new Point(12, 515);
             popolnenieFondaButton.Name = "popolnenieFondaButton";
-            popolnenieFondaButton.Size = new Size(296, 58);
+            popolnenieFondaButton.Size = new Size(304, 58);
             popolnenieFondaButton.TabIndex = 5;
             popolnenieFondaButton.Text = "Пополнение фонда";
             popolnenieFondaButton.UseVisualStyleBackColor = true;
             popolnenieFondaButton.Click += popolnenieFondaButton_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(304, 241);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(320, 350);
+            ClientSize = new Size(328, 585);
+            Controls.Add(pictureBox1);
             Controls.Add(popolnenieFondaButton);
             Controls.Add(sotrudnikiButton);
             Controls.Add(tipLiteraturyButton);
@@ -102,6 +116,7 @@
             Controls.Add(bibliotekiButton);
             Name = "MainForm";
             Text = "MainForm";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -112,5 +127,6 @@
         private Button tipLiteraturyButton;
         private Button sotrudnikiButton;
         private Button popolnenieFondaButton;
+        private PictureBox pictureBox1;
     }
 }
