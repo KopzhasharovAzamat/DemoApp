@@ -135,6 +135,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Silver;
             ClientSize = new Size(586, 482);
             Controls.Add(searchTextBox);
             Controls.Add(searchLabel);

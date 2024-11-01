@@ -47,47 +47,52 @@
             // 
             // AddButton
             // 
+            AddButton.BackColor = Color.Silver;
             AddButton.Location = new Point(892, 150);
             AddButton.Name = "AddButton";
             AddButton.Size = new Size(187, 23);
             AddButton.TabIndex = 1;
             AddButton.Text = "Добавить";
-            AddButton.UseVisualStyleBackColor = true;
+            AddButton.UseVisualStyleBackColor = false;
             AddButton.Click += AddButton_Click;
             // 
             // EditButton
             // 
+            EditButton.BackColor = Color.Silver;
             EditButton.Location = new Point(892, 179);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(187, 23);
             EditButton.TabIndex = 2;
             EditButton.Text = "Обновить";
-            EditButton.UseVisualStyleBackColor = true;
+            EditButton.UseVisualStyleBackColor = false;
             EditButton.Click += EditButton_Click;
             // 
             // DeleteButton
             // 
+            DeleteButton.BackColor = Color.Silver;
             DeleteButton.Location = new Point(892, 208);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(187, 23);
             DeleteButton.TabIndex = 3;
             DeleteButton.Text = "Удалить";
-            DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.UseVisualStyleBackColor = false;
             DeleteButton.Click += DeleteButton_Click;
             // 
             // SearchButton
             // 
+            SearchButton.BackColor = Color.Silver;
             SearchButton.Location = new Point(892, 281);
             SearchButton.Name = "SearchButton";
             SearchButton.Size = new Size(187, 23);
             SearchButton.TabIndex = 4;
             SearchButton.Text = "Поиск";
-            SearchButton.UseVisualStyleBackColor = true;
+            SearchButton.UseVisualStyleBackColor = false;
             SearchButton.Click += SearchButton_Click;
             // 
             // nazvanieLabel
             // 
             nazvanieLabel.AutoSize = true;
+            nazvanieLabel.BackColor = Color.Silver;
             nazvanieLabel.Location = new Point(892, 12);
             nazvanieLabel.Name = "nazvanieLabel";
             nazvanieLabel.Size = new Size(59, 15);
@@ -96,6 +101,7 @@
             // 
             // nazvanieTextBox
             // 
+            nazvanieTextBox.BackColor = Color.Silver;
             nazvanieTextBox.Location = new Point(892, 30);
             nazvanieTextBox.Name = "nazvanieTextBox";
             nazvanieTextBox.Size = new Size(187, 23);
@@ -103,6 +109,7 @@
             // 
             // adresTextBox
             // 
+            adresTextBox.BackColor = Color.Silver;
             adresTextBox.Location = new Point(892, 74);
             adresTextBox.Name = "adresTextBox";
             adresTextBox.Size = new Size(187, 23);
@@ -111,6 +118,7 @@
             // adresLabel
             // 
             adresLabel.AutoSize = true;
+            adresLabel.BackColor = Color.Silver;
             adresLabel.Location = new Point(892, 56);
             adresLabel.Name = "adresLabel";
             adresLabel.Size = new Size(40, 15);
@@ -119,6 +127,7 @@
             // 
             // gorodTextBox
             // 
+            gorodTextBox.BackColor = Color.Silver;
             gorodTextBox.Location = new Point(892, 121);
             gorodTextBox.Name = "gorodTextBox";
             gorodTextBox.Size = new Size(187, 23);
@@ -127,6 +136,7 @@
             // gorodLabel
             // 
             gorodLabel.AutoSize = true;
+            gorodLabel.BackColor = Color.Silver;
             gorodLabel.Location = new Point(892, 103);
             gorodLabel.Name = "gorodLabel";
             gorodLabel.Size = new Size(40, 15);
@@ -135,16 +145,18 @@
             // 
             // RefreshTableButton
             // 
+            RefreshTableButton.BackColor = Color.Silver;
             RefreshTableButton.Location = new Point(892, 310);
             RefreshTableButton.Name = "RefreshTableButton";
             RefreshTableButton.Size = new Size(187, 23);
             RefreshTableButton.TabIndex = 11;
             RefreshTableButton.Text = "Обновить Таблицу";
-            RefreshTableButton.UseVisualStyleBackColor = true;
+            RefreshTableButton.UseVisualStyleBackColor = false;
             RefreshTableButton.Click += RefreshTableButton_Click;
             // 
             // searchTextBox
             // 
+            searchTextBox.BackColor = Color.Silver;
             searchTextBox.Location = new Point(892, 252);
             searchTextBox.Name = "searchTextBox";
             searchTextBox.Size = new Size(187, 23);
@@ -153,6 +165,7 @@
             // searchLabel
             // 
             searchLabel.AutoSize = true;
+            searchLabel.BackColor = Color.Silver;
             searchLabel.Location = new Point(892, 234);
             searchLabel.Name = "searchLabel";
             searchLabel.Size = new Size(42, 15);
@@ -171,6 +184,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Silver;
             ClientSize = new Size(1091, 621);
             Controls.Add(searchTextBox);
             Controls.Add(searchLabel);

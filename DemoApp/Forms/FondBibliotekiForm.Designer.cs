@@ -261,6 +261,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Silver;
             ClientSize = new Size(1093, 624);
             Controls.Add(kolichestvoReferatovTextBox);
             Controls.Add(kolichestvoReferatovLabel);
