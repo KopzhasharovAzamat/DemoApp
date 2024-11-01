@@ -38,7 +38,8 @@ namespace DemoApp
 
         private void sotrudnikiButton_Click(object sender, EventArgs e)
         {
-
+            SotrudnikiForm sotrudnikiForm = new SotrudnikiForm();
+            sotrudnikiForm.Show();
         }
     }
 }
