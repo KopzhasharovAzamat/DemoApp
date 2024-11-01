@@ -28,78 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            bibliotekiButton = new Button();
+            fondBibliotekButton = new Button();
+            tipLiteraturyButton = new Button();
+            sotrudnikiButton = new Button();
+            popolnenieFondaButton = new Button();
             SuspendLayout();
             // 
-            // button1
+            // bibliotekiButton
             // 
-            button1.Font = new Font("Segoe UI", 20.25F);
-            button1.Location = new Point(12, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(296, 58);
-            button1.TabIndex = 0;
-            button1.Text = "Библиотеки";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
+            bibliotekiButton.Font = new Font("Segoe UI", 20.25F);
+            bibliotekiButton.Location = new Point(12, 12);
+            bibliotekiButton.Name = "bibliotekiButton";
+            bibliotekiButton.Size = new Size(296, 58);
+            bibliotekiButton.TabIndex = 0;
+            bibliotekiButton.Text = "Библиотеки";
+            bibliotekiButton.UseVisualStyleBackColor = true;
+            bibliotekiButton.Click += bibliotekiButton_Click;
             // 
-            // button2
+            // fondBibliotekButton
             // 
-            button2.Font = new Font("Segoe UI", 20.25F);
-            button2.Location = new Point(12, 76);
-            button2.Name = "button2";
-            button2.Size = new Size(296, 58);
-            button2.TabIndex = 2;
-            button2.Text = "Фонд библиотек";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            fondBibliotekButton.Font = new Font("Segoe UI", 20.25F);
+            fondBibliotekButton.Location = new Point(12, 76);
+            fondBibliotekButton.Name = "fondBibliotekButton";
+            fondBibliotekButton.Size = new Size(296, 58);
+            fondBibliotekButton.TabIndex = 2;
+            fondBibliotekButton.Text = "Фонд библиотек";
+            fondBibliotekButton.UseVisualStyleBackColor = true;
+            fondBibliotekButton.Click += fondBibliotekButton_Click;
             // 
-            // button3
+            // tipLiteraturyButton
             // 
-            button3.Font = new Font("Segoe UI", 20.25F);
-            button3.Location = new Point(12, 207);
-            button3.Name = "button3";
-            button3.Size = new Size(296, 58);
-            button3.TabIndex = 3;
-            button3.Text = "Тип литературы";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            tipLiteraturyButton.Font = new Font("Segoe UI", 20.25F);
+            tipLiteraturyButton.Location = new Point(12, 207);
+            tipLiteraturyButton.Name = "tipLiteraturyButton";
+            tipLiteraturyButton.Size = new Size(296, 58);
+            tipLiteraturyButton.TabIndex = 3;
+            tipLiteraturyButton.Text = "Тип литературы";
+            tipLiteraturyButton.UseVisualStyleBackColor = true;
+            tipLiteraturyButton.Click += tipLiteraturyButton_Click;
             // 
-            // button4
+            // sotrudnikiButton
             // 
-            button4.Font = new Font("Segoe UI", 20.25F);
-            button4.Location = new Point(12, 143);
-            button4.Name = "button4";
-            button4.Size = new Size(296, 58);
-            button4.TabIndex = 4;
-            button4.Text = "Сотрудники";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            sotrudnikiButton.Font = new Font("Segoe UI", 20.25F);
+            sotrudnikiButton.Location = new Point(12, 143);
+            sotrudnikiButton.Name = "sotrudnikiButton";
+            sotrudnikiButton.Size = new Size(296, 58);
+            sotrudnikiButton.TabIndex = 4;
+            sotrudnikiButton.Text = "Сотрудники";
+            sotrudnikiButton.UseVisualStyleBackColor = true;
+            sotrudnikiButton.Click += sotrudnikiButton_Click;
             // 
-            // button5
+            // popolnenieFondaButton
             // 
-            button5.Font = new Font("Segoe UI", 20.25F);
-            button5.Location = new Point(12, 271);
-            button5.Name = "button5";
-            button5.Size = new Size(296, 58);
-            button5.TabIndex = 5;
-            button5.Text = "Пополнение фонда";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            popolnenieFondaButton.Font = new Font("Segoe UI", 20.25F);
+            popolnenieFondaButton.Location = new Point(12, 271);
+            popolnenieFondaButton.Name = "popolnenieFondaButton";
+            popolnenieFondaButton.Size = new Size(296, 58);
+            popolnenieFondaButton.TabIndex = 5;
+            popolnenieFondaButton.Text = "Пополнение фонда";
+            popolnenieFondaButton.UseVisualStyleBackColor = true;
+            popolnenieFondaButton.Click += popolnenieFondaButton_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(320, 350);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(popolnenieFondaButton);
+            Controls.Add(sotrudnikiButton);
+            Controls.Add(tipLiteraturyButton);
+            Controls.Add(fondBibliotekButton);
+            Controls.Add(bibliotekiButton);
             Name = "MainForm";
             Text = "MainForm";
             ResumeLayout(false);
@@ -107,10 +107,10 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private Button bibliotekiButton;
+        private Button fondBibliotekButton;
+        private Button tipLiteraturyButton;
+        private Button sotrudnikiButton;
+        private Button popolnenieFondaButton;
     }
 }

@@ -13,28 +13,32 @@ namespace DemoApp
             InitializeComponent();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void bibliotekiButton_Click(object sender, EventArgs e)
         {
             BibliotekaForm bibliotekaForm = new BibliotekaForm();
             bibliotekaForm.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void fondBibliotekButton_Click(object sender, EventArgs e)
         {
             FondBibliotekiForm fondBibliotekiForm = new FondBibliotekiForm();
             fondBibliotekiForm.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void popolnenieFondaButton_Click(object sender, EventArgs e)
         {
+            PopolnenieFondaForm popolnenieFondaForm = new PopolnenieFondaForm();
+            popolnenieFondaForm.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void tipLiteraturyButton_Click(object sender, EventArgs e)
         {
+
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void sotrudnikiButton_Click(object sender, EventArgs e)
         {
+
         }
     }
 }
